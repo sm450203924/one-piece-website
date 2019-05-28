@@ -1,0 +1,40 @@
+.menu{
+  background-color: #ffffff;
+  font-size: 18px;
+  box-shadow: 0 5px 5px 0 #4c4c4c;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top:0;
+  .navbar-toggler{
+    position: absolute;
+    top: 8px;
+  }
+  img{
+    height:2em;
+  }
+  .menu-nav{
+    margin: 0 auto;
+    text-align: center;
+  }
+  .nav-item{
+    padding: 0 1em;
+  }
+  .navbar-brand{
+    padding:0;
+  }
+  @media (min-width: 768px){
+    .navbar-collapse {
+      float: right;
+    }
+    .menu img {
+      height: 2.5em;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    margin-right: 0;
+  }
+}

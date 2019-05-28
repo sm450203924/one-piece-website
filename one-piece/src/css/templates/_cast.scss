@@ -1,0 +1,92 @@
+$cast-list: luffy, zoro, nami, usopp, sanji, chopper, robin, franky, brook;
+$cast-color-list: rgba(184,0,0,0.5),rgba(15,157,0,0.5),rgba(255,200,0,0.5),rgba(184,106,0,0.5),rgba(3,0,165,0.5),rgba(111,0,0,0.5),rgba(255,150,255,0.5),rgba(0,158,215,0.5),rgba(0,50,67,0.5);
+
+/*
+$luffy:rgba(184,0,0,0.5);
+//$luffy-color:rgba(184,0,0,0.5);
+$zoro-color:rgba(15,157,0,0.5);
+$nami-color:rgba(255,200,0,0.5);
+$usopp-color:rgba(184,106,0,0.5);
+$sanji-color:rgba(3,0,165,0.5);
+$chopper-color:rgba(111,0,0,0.5);
+$robin-color:rgba(255,150,255,0.5);
+$franky-color:rgba(0,158,215,0.5);
+$brook-color:rgba(0,50,67,0.5);
+*/
+
+
+.cast {
+
+  section {
+    &:nth-of-type(2n+1) {
+      background-color: rgba(255, 255, 255, 0.9)
+    }
+    &:nth-of-type(2n) {
+      background-color: rgba(255, 254, 226, 0.9);
+    }
+    .personal-profile{
+      padding:2em 5em;
+      &:nth-of-type(1){
+        .profile-text{
+          border-left-width: 1.5em;
+        }
+      }
+      &:nth-of-type(2){
+        .profile-text{
+          border-right-width: 1.5em;
+        }
+      }
+    }
+  }
+
+  h3 {
+    font-family: "neo-latina";
+    font-size: 1.8em;
+    font-weight:500;
+  }
+
+  .personal-pic{
+    >div{
+      height:12em;
+      width:12em;
+      max-width: 100%;
+      max-height: 100%;
+      margin:0 auto;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      border: 5px inset;
+      background-size: 100%;
+      background-position: top;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .profile-text{
+    background-color: #fff;
+    border:0.8em solid #E7E7E7;
+  }
+
+  @each $cast in $cast-list {
+    $i:index($cast-list,$cast);
+    ##{$cast}{
+      .personal-pic{
+        >div{
+          border-color:nth($cast-color-list,$i);
+          background-image: url('../images/cast/cast-#{$cast}.jpg');
+        }
+      }
+      @if $i % 2 == 0 {
+        .profile-text{
+          border-right-color: nth($cast-color-list,$i);
+        }
+      }@else{
+        .profile-text{
+          border-left-color: nth($cast-color-list,$i);
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,71 @@
+/*
+Error: File to import not found or unreadable: ~bootstrap/scss/functions.
+        on line 1 of plugins/bootstrap_part.scss
+        from line 1 of home.scss
+
+1: @import "plugins/bootstrap_part";
+2: @import "common/global";
+3: @import "layouts/menu";
+4: @import "layouts/footer";
+5: @import "layouts/fonts";
+6: @import "templates/home";
+
+Backtrace:
+plugins/bootstrap_part.scss:1
+home.scss:1
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:67:in `rescue in import'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:44:in `import'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:28:in `imported_file'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:37:in `css_import?'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `map'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:88:in `block in with_import'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:88:in `with_import'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:391:in `_render_with_sourcemap'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:309:in `render_with_sourcemap'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin.rb:82:in `update_stylesheets'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:51:in `process_result'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
+E:/software/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/bin/scss:13:in `<top (required)>'
+E:/software/Ruby24-x64/bin/scss:23:in `load'
+E:/software/Ruby24-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ~bootstrap/scss/functions.\A         on line 1 of plugins/bootstrap_part.scss\A         from line 1 of home.scss\A \A 1: @import \"plugins/bootstrap_part\";\A 2: @import \"common/global\";\A 3: @import \"layouts/menu\";\A 4: @import \"layouts/footer\";\A 5: @import \"layouts/fonts\";\A 6: @import \"templates/home\";"; }

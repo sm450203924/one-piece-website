@@ -1,0 +1,80 @@
+article.container{
+  background-color: rgba(255,255,255,0.9);
+}
+
+.video {
+  section {
+    margin: auto;
+    max-width: 1200px;
+    margin-top: 60px;
+
+    h2 {
+      text-align: left;
+      font-size: 2.5em;
+      font-family: 'neo-latina';
+      color:#4c4c4c;
+      img{
+        width:1.5em;
+        height:1.3em;
+      }
+    }
+    hr {
+      text-align: left;
+      width: 50%;
+    }
+    .vid-wrap {
+      cursor: pointer;
+      border-radius: 2px;
+      box-shadow: 0px .1em .7em rgba(0, 0, 0, 0.2);
+      h3{
+        padding:1em;
+        margin:0 auto;
+        font-size:1.3em;
+        font-family: Helvetica, sans-serif;;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space:nowrap;
+      }
+    }
+  }
+  .vid {
+    height: 15em;
+    width: auto;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0px .1em .7em rgba(0, 0, 0, 0.2);
+    &:before, &:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      transition: opacity .2s;
+    }
+    &:after {
+      background-repeat: no-repeat;
+      background-position: .7em .7em;
+      opacity: .5;
+      background-size: 2em;
+    }
+
+    &:before {
+      background: linear-gradient(150deg, #000, transparent 70%);
+      opacity: .9;
+    }
+    &:hover{
+      &:after {
+        opacity: .8;
+      }
+      &:before {
+        opacity: .85;
+      }
+    }
+  }
+  .youtube:after {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20159.00691%20111.60904%22%3E%3Cpath%20d%3D%22M36.2%20111c-25-1.3-29.6-4-34-18.6C.3%2086.7%200%2080%200%2057.4%200%2019%202.3%209.7%2013.6%204c11.5-5.6%20120-5.6%20131.4%200%206%203%2010%208.7%2011.8%2017.2%202%209.8%203%2042.2%201.5%2057.5-2%2020.4-7%2028.5-19.2%2030.8-7.6%201.5-82%202.4-102.8%201.3zM85%2065.3c11.3-6%2020.4-11%2020.3-11L84%2043%2063%2032v22c0%2012%20.4%2022%20.8%2022%20.3%200%2010-5%2021.2-10.8z%22%20fill%3D%22%23db2823%22%2F%3E%3Cpath%20d%3D%22M63.2%2032c-.4.3-.2%201-.3%201.3v28.5c0%204.6%200%209.2.5%2013.8%200%20.4.3.7.6.5%206.3-3%2012.3-6%2018.4-9.3%207.5-4%2015-7.8%2022.2-12%20.3%200%201-.4.6-.8-12.8-7-25.7-13.5-38.6-20.2-1-.6-2.2-1.3-3.4-1.7z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E');
+    background-size: 2.5em;
+  }
+}

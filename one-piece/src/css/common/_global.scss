@@ -1,0 +1,63 @@
+body{
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+}
+
+img{
+  max-width: 100%;
+}
+
+h1,h2,h3{
+  text-align: center;
+}
+
+p{
+  line-height: 2;
+}
+
+hr{
+  border-top: 1px solid rgba(188, 188, 188, 0.5);
+}
+
+@font-face {
+  font-family: "Rockit";
+  src: url(../fonts/Rockit.ttf) format("truetype"), url('../fonts/Rockit.eot?#iefix') format('embedded-opentype');
+}
+@font-face {
+  font-family: "neo-latina";
+  src: url(../fonts/neo-latina-demo-FFP.ttf) format("truetype"), url('../fonts/neo-latina-demo-FFP.eot?#iefix') format('embedded-opentype');
+}
+@font-face {
+  font-family: "Khalifah";
+  src: url(../fonts/Khalifah.ttf) format("truetype"), url('../fonts/neo-latina-demo-FFP.eot?#iefix') format('embedded-opentype');
+}
+
+@media (max-width: 767.98px) {
+  body{
+    font-size: 13px;
+  }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  body{
+    font-size: 12px;
+  }
+}
+
+button#toTopBtn{
+  width:4em;
+  height:6em;
+  background-color: rgba(255,255,255,.5);
+  box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+  border: none;
+  border-radius: 0.5em;
+  position: fixed;
+  right:3em;
+  bottom: 6em;
+  i{
+    font-size:2em;
+  }
+  svg{
+    font-size:2em;
+  }
+}

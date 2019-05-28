@@ -1,0 +1,27 @@
+footer{
+  background-color: #000;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 2em 0;
+  a{
+    color: #ffffff;
+  }
+  .row {
+    margin: auto 0;
+  }
+  i{
+    font-size: 1.5em !important;
+  }
+  svg{
+    font-size: 1.5em !important;
+  }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  footer{
+    div{
+      margin-top: 0.5em;
+    }
+    text-align: center
+  }
+}
