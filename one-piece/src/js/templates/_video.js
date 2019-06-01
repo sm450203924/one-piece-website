@@ -4,24 +4,17 @@ const setClickHandler = (id, fn) => {
 };
 
 /* fetch video list source */
-const fetchVideoSource =()=>{
+const fetchVideoSource = () => {
     let searchDom = $('.series section');
 
     for (let i = 0, j = searchDom.length; i < j; i++) {
 
         let searchWord = searchDom.eq(i).find('h2').text();
-        /*
 
-                //Using this API requires the website domain, and I haven't have it yet. Therefore, I have to download the json file by "Try this API"
-                searchWord = searchWord.toString().toLowerCase().replace(/\s/g, "%20");
-                const myAPI = 'AIzaSyAr04qZG7V1gAIqvhS517XbFZnZdw2EOo4';
-                let url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&q=one%20piece' + searchWord + '&type=video&key=' + myAPI;
-
-        */
-        // these json files are fetched by Youtube search list API
-
-        searchWord = searchWord.toString().toLowerCase().replace(/\s/g, "-");
-        let url = '../json/' + searchWord + '.json';
+        //Using youtube search list API to get video list
+        searchWord = searchWord.toString().toLowerCase().replace(/\s/g, "%20");
+        const myAPI = 'AIzaSyCYNjPwG5IddBh9YgnlzIYfY1RXhOygfKM';
+        let url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&q=one%20piece' + searchWord + '&type=video&key=' + myAPI;
 
         $.ajax({
             url: url,
@@ -46,5 +39,5 @@ const fetchVideoSource =()=>{
     }
 };
 
-export { setClickHandler, fetchVideoSource }
+export {setClickHandler, fetchVideoSource}
 
